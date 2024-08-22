@@ -26,7 +26,7 @@ const GameContext = createContext<{
 } | null>(null);
 
 const GameContextProvider = ({ children }: { children: ReactNode }) => {
-  const [gridsUnit, setGridsUnit] = useState<number>(30);
+  const gridsUnit = 30;
   const [snakeBody, setSnakeBody] = useState<number[][]>([
     // [1, 0],
     // [0, 0],
