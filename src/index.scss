@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .center {
+    @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+  }
+  .btn1 {
+    @apply text-slate-300 font-semibold px-5 py-1 flex items-center justify-center gap-1.5 hover:opacity-80;
+    img {
+      @apply invert size-3;
+    }
+  }
+  .arrow-control {
+    @apply size-8 invert cursor-pointer;
+  }
+}
